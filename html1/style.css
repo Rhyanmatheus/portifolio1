@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{ /* resetando config de margin e padding na pagina toda */
+    margin: 0;
+    padding: 0;
+    
+}
+body{ /* todo conteudo visua da pagina */
+    
+    background-color: black; /* cor de fundo*/
+    height: 100vh; /* 100% do tamanho da tela */
+    color: white; /* cor da fonte */
+    box-sizing: border-box; /* limitar a margem*/
+}
+
+.destaque_titulo{ /*strong  */
+    color: #22D4FD; /* cor da fonte */
+}
+.apresentacao{ /* main */
+    display: flex;
+    /*flex-direction: row; section(colu esq) e img(col direita)*/
+    align-items: center; /* colunas centralizadas */
+    justify-content: space-between; /* espaço entre as colunas */
+    margin: 10% 15%; /* topo/fundo - direita/esquerda */
+}
+.apresentacao_texto{ /* section coluna da esquerda  */
+    display: flex; /* h1 p div */
+    gap: 40px; /* espaçamento entre as tags*/
+    width: 50%; /* section ocupa 50% de largura da caixa main */
+    flex-direction: column;
+
+}
+.titulo_apresentacao { /* h1 */
+    font-size: 24px; /* Tamanho do título/font */
+    font-family: "krona one", sans-serif;
+}
+.texto_conteudo_apresentacao { /* tag p */
+    font-size: 24px; /* Tamanho do texto */
+    font-family: "Montserrat", sans-serif;
+    
+}
+.apresentacao_links{ /* DIV - COLUNA ESQUERDA */
+    display: flex; /*2 caixas - botoes - tag <a> */
+    justify-content: space-between;  /*espaço entre as caixas*/
+    flex-direction: row;  /*direção*/
+    
+}
+
+
+img{
+    height: 300px;
+    width: 400px;
+}
+.apresentacao_links_botao{ /* tag a - botoes que estao na div */
+    background-color: #22D4FD ; /* cor de fundo*/
+    width: 280px ; /* largura do botão */
+    text-align: center ; /* centraliza o texto */
+    border-radius: 16px; /* arredondamento da borda */
+    font-size: 24px ; /*tamanho da fonte */
+    font-weight: 600; /* peso da fonte  */
+    padding: 21.5px 0; /* espaço entre o texto e borda do botão */
+    text-decoration: none ; /* tira o sublinhado  */
+    color: black; /* cor da fonte */
+    font-family: "montserrat",sans-serif; /* estilo da fonte*/
+
+}
